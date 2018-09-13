@@ -235,5 +235,6 @@ function isGeneratorFunction(obj) {
  */
 
 function isObject(val) {
-  return Object == val.constructor;
+  // adding ability to pass classical inhertiance object
+  return val !== null && typeof val === 'object';
 }
